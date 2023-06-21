@@ -1,0 +1,53 @@
+.theme-persona .composer {
+	background-color: @brand-primary;
+	border-radius: 10px 10px 0 0;
+
+	.title-container .title {
+		font-size: 16px;
+	}
+	.write, .preview {
+		background-color: @brand-primary;
+		color: @brand-secondary;
+		border-color: @brand-secondary;
+		box-shadow: none;
+		border-radius: 10px;
+	}
+	.preview {
+		background-color: @brand-secondary;
+		color: @brand-primary;
+		overflow-y: auto;
+
+		p {
+			margin: 0 0 18px;
+		}
+		
+		blockquote {
+			font-size: 12px;
+			
+			p {
+				margin-bottom: 0px;
+			}
+		}
+	}
+
+	.title-container .title, .title-container .handle {
+		display: flex;
+		align-items: center;
+	}
+
+	.tags-container .bootstrap-tagsinput {
+		background-color: transparent;
+		border-color: @brand-secondary;
+		border-radius: 10px;
+		box-shadow: none;
+		padding: .5rem;
+	}
+
+	.formatting-bar  .formatting-group {
+		li:focus,
+		li:hover {
+			background-color: @brand-secondary;
+			color: @brand-primary;
+		}
+	}
+}
